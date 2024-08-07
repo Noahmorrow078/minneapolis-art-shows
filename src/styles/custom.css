@@ -1,0 +1,19 @@
+.bg-grid-pattern {
+    background-image:url('/public/images/background.png');
+}
+form input {
+    border: 2px solid #ed2237;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+form {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    border-radius:8px;
+}

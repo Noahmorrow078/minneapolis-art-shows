@@ -1,5 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import { Image } from 'astro:assets';
+
+import mailman from '/public/images/mailman.png';
+import mainLogo from '/public/images/main-logo.png';
+import stayTuned from '/public/images/stay-tuned.png';
+
+import Mailchimpform from '../components/Mailchimpform.jsx';
+
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
@@ -12,10 +21,10 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
 ---
 
 <Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-4" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="text-lg mb-10" />
-    <p class="mb-8">
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Read the Docs</a>
-    </p>
+    <div class="mb-4 flex flex-col justify-center items-center">
+        <Image src={mainLogo} alt="mailman" class="" />
+        <Image src={mailman} alt="mailman" class="" />
+        <Image src={stayTuned} alt="mailman" class="" />
+        <Mailchimpform client:only="react" />
+    </div>
 </Layout>
