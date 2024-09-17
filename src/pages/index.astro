@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 import { Image } from 'astro:assets';
-
+import Card from '../components/Card.astro';
 import mailman from '/public/images/mailman.png';
 import mainLogo from '/public/images/main-logo.png';
 import stayTuned from '/public/images/stay-tuned.png';
@@ -26,5 +26,6 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
         <Image src={mailman} alt="mailman" class="" />
         <Image src={stayTuned} alt="mailman" class="" />
         <Mailchimpform client:only="react" />
+        <Card />
     </div>
 </Layout>
