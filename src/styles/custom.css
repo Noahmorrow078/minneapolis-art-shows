@@ -1,19 +1,38 @@
 .bg-grid-pattern {
-    background-image:url('/public/images/background.png');
+    background-image: url('/public/images/background.png');
 }
+
 form input {
     border: 2px solid #ed2237;
-    border-radius:8px;
-    margin-bottom:10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 form {
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 form button {
-    border-radius:8px;
+    border-radius: 8px;
+}
+
+.home-btn {
+    padding: 10px 20px;
+    background: #272a71;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.home-btn:hover {
+    transform: scale(1.07);
 }
